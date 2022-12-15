@@ -10,6 +10,7 @@
 #include <sys/stat.h>
 
 
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -69,4 +70,5 @@ void get_pstr(stack_t **stack, unsigned int line_number);
 void get_free(stack_t *stack);
 int _isdigit(char *str);
 
-#endif
+
+#endif /* MONTY_H */
