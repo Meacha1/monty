@@ -18,7 +18,7 @@ void get_pchar(stack_t **stack, unsigned int line_number)
 		get_free(*stack);
 		exit(EXIT_FAILURE);
 	}
-	if (!(isascii((*stack)->n)))
+	if (!(_isascii((*stack)->n)))
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
 		fclose(file);

@@ -24,7 +24,7 @@ void get_pstr(stack_t **stack, unsigned int line_number)
 	{
 		while (top_node != NULL)
 		{
-			if ((top_node->n > 0) && (isascii(top_node->n)))
+			if ((top_node->n > 0) && (_isascii(top_node->n)))
 			{
 				printf("%c", top_node->n);
 				top_node = top_node->next;
